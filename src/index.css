@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.note {
+    background-color: rgba(255, 251, 0, 0.486);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 grey;
+    transition: 0.3s;
+    white-space: pre-wrap;
+    min-height: 200px;
+    position: relative;
+    max-height: 300px;
+    overflow: -moz-hidden-unscrollable;
+}
+
+.note:hover {
+    box-shadow: 0 4px 8px 0 grey;
+    transition: 0.3s;
+}
+
+.note.add-note {
+    background-color: rgb(100, 202, 216);
+}
+
+.note-footer {
+    position: absolute;
+    width: auto;
+    bottom: 10px;
+    right: 10px;
+}
+
+.delete-note {
+    text-align: center;
+}
+
+.delete-note:hover {
+    cursor: pointer;
+}
+
+.note-date {
+    position: relative;
+    bottom: 5px;
+    padding: 5px;
+}
+
+.notes {
+    display: grid;
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 0.5rem;
+    padding: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.app {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.save-button {
+    background-color: rgb(211, 206, 206);
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 100px;
+}
+
+.save-button:hover {
+    cursor: pointer;
+    background-color: rgb(192, 187, 187);
+}
+
+textarea {
+    border: none;
+    background-color: rgb(100, 202, 216);
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.search {
+    box-shadow: 0 1px 2px 0 grey;
+    transition: 0.3s;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgb(233, 230, 227);
+    border: none;
+    display: flex;
+    border-radius: 5px;
+}
+
+.search:hover {
+    box-shadow: 0 2px 4px 0 grey;
+    transition: 0.3s;
+}
+
+.search-icon {
+    color: black;
+    text-align: center;
+}
+
+.search input {
+    background-color: rgb(233, 230, 227);
+    border: none;
+    width: 100%;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.header {
+    position: relative;
+    margin: 0.5rem;
+}
+
+.toggle-button {
+    box-shadow: 0 1px 2px 0 grey;
+    transition: 0.3s;
+    position: absolute;
+    border-radius: 10px;
+    right: 0px;
+    bottom: 0px;
+    padding: 5px 10px 5px 10px;
+}
